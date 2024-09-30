@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Layout 4</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
     <style>
+      body {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1em;
+      }
+      header {
+        grid-column: 6;
+        grid-row: 1/5;
+      }
+      nav {
+        grid-column: 6;
+        grid-row: 4/7;
+      }
+      main {
+        grid-column: 1/6;
+        grid-row: 1/4;
+      }
+      footer {
+        grid-column: 1/6;
+        grid-row: 4/7;
+      }
       /* Doe hier jouw ding! */
     </style>
   </head>
